@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="total">
+      <div class="left">
+        <div class="top-right">
+          <p class="titulo">Financiamento veicular</p>
+          <p class="limpar">Limpar tudo</p>
+        </div>
+        <div class="form">
+          <div class="inicio-esquerda">
+            <div class="div-inicial-esquerda">
+              <label for="valor-total">Valor do veículo</label>
+              <input
+                type="number"
+                id="valor-total"
+                placeholder="Digite o valor R$"
+              />
+            </div>
+            <div class="div-inicial-esquerda">
+              <label for="valor-entrada">Valor da entrada</label>
+              <input
+                type="number"
+                id="valor-entrada"
+                placeholder="Digite o valor R$"
+              />
+            </div>
+          </div>
+          <div class="formeParte2">
+            <div class="div1">
+              <label for="prazo">Prazo em meses</label>
+              <input type="number" id="prazo" placeholder="Ex: 36 meses" />
+            </div>
+            <div class="div2">
+              <label for="juros">Taxa de juros ao ano</label>
+              <input type="number" id="juros" placeholder="%" />
+            </div>
+          </div>
+        </div>
+        <button class="calcular">
+          <img
+            src="assets/images/icon-calculator.svg"
+            alt=""
+            srcset=""
+          />Calcular
+        </button>
+      </div>
+
+      <div class="right">
+        <div class="previa">
+          <img src="assets/images/illustration-empty.svg" alt="" srcset="" />
+          <h1 class="resultado">O resultado aparece aqui</h1>
+          <p class="texto-resultado">
+            Preencha o formulário e click em "Calcular"<br />para ver sua
+            parcela mensal
+          </p>
+        </div>
+        <div id="resultado">
+          <span>O valor da sua parcela é:</span>
+          <span class="valor">R$</span>
+          <hr class="divider" />
+          <span>No final você terá pago:</span>
+          <span class="valor-final">R$</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

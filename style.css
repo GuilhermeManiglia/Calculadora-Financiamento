@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-100: hsl(202, 86%, 94%);
+  --Slate-300: hsl(203, 41%, 72%);
+  --Slate-500: hsl(200, 26%, 54%);
+  --Slate-700: hsl(200, 24%, 40%);
+  --Slate-900: hsl(202, 55%, 16%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Plus Jakarta Sans;
+  background-color: var(--Slate-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.total {
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: -30px 20px 90px rgba(0, 0, 0, 0.411);
+  border-radius: 20px 20px 20px 20px;
+  background-color: var(--White);
+  overflow: hidden;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.left {
+  background-color: var(--White);
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 40px;
+  border-radius: 20px 0px 0px 20px;
+}
+.right {
+  background-color: var(--Slate-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 20px 20px 70px;
+  padding: 20px 80px;
+}
+
+.top-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formeParte2 {
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+input[type="number"] {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--Slate-700);
+  margin-top: 5px;
+  outline: none;
+  -webkit-appearance: none; /* Para Chrome, Safari, Opera */
+  appearance: none;
+}
+
+.calcular {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background-color: hsl(61, 70%, 52%);
+  color: var(--Slate-900);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+label {
+  font-size: 14px;
+  color: var(--Slate-900);
+}
+
+p {
+  color: var(--Slate-900);
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.limpar {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.resultado {
+  font-size: 18px;
+  color: var(--Slate-100);
+}
+
+.texto-resultado {
+  color: var(--Slate-100);
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio-esquerda {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-inicial-esquerda {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.valor {
+  color: hsl(61, 70%, 52%);
+}
+
+#resultado {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  color: var(--Slate-100);
+  padding: 30px;
+}
+
+.previa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valor {
+  font-size: 54px;
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .total {
+    display: flex !important;
+    flex-direction: column;
+    box-shadow: none;
+    margin: 5%;
+  }
+
+  .right {
+    background-color: var(--Slate-900);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 0px 0px 0px;
+
+    padding: 30px;
+  }
+  .left {
+    background-color: var(--White);
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  body {
+    font-family: Plus Jakarta Sans;
+    background-color: var(--Slate-100);
+    padding-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  .formeParte2 {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .calcular {
+    margin-top: 15px;
+  }
+}
